@@ -246,7 +246,7 @@ a img {
 }
 
 .calendar .days li .event:hover {
-    transform: scale(2);
+    transform: scale(1.5);
     transition: 2s;
 }
 
@@ -281,6 +281,21 @@ a img {
 .outside {
     opacity: 50%;
 }
+
+.modal {
+    color: black;
+}
+
+.modal img {
+    background-size: cover;
+    position: relative;
+    width: 100%;
+}
+
+.modal h3 {
+    text-align: center;
+}
+
 
 @media screen and (max-width: 900px) {
     
