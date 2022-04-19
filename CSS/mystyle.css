@@ -63,6 +63,7 @@ a img {
 
 .Nav {
     padding: 30px 200px 20px;
+    overflow: hidden;
 }
 
 .Nav a {
@@ -76,6 +77,10 @@ a img {
 .Nav a:hover {
     text-decoration: none;
     background-color: green; 
+}
+
+.Nav .icon {
+    display: none;
 }
 
 .container-fluid {
@@ -296,6 +301,29 @@ a img {
     text-align: center;
 }
 
+/* Contact */
+.contact h2 {
+    text-align: center;
+}
+
+input [type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input, select {
+    width: 30%;
+}
+
+label {
+    padding-left: 20px;
+}
 
 @media screen and (max-width: 900px) {
     
@@ -305,5 +333,23 @@ a img {
     
 }
 
-
+@media screen and (max-width: 600px) {
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+    
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+}
 
