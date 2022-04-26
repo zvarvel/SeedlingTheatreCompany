@@ -29,13 +29,13 @@ footer h6 {
 
 /* Header */
 .header {
-    background-image: url(../images/curtain-top.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25)), url(../images/curtain-top.png);
     background-size: cover;
     background-position: center;
     position: relative;
     background-repeat: no-repeat;
     width: 100%;
-    height: 250px;
+    height: 300px;
 }
 
 a {
@@ -324,6 +324,50 @@ input, select {
 label {
     padding-left: 20px;
 }
+
+/* Gallery */
+.galleryshow {
+    padding: 0 10%;
+}
+
+.showcontent, .showcontent button {
+    color: white;
+}
+
+.galheader h1, .galheader h3{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.aboutbody {
+    background-color: antiquewhite;
+}
+
+.aboutbody h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.contentbox {
+    background-color: #faf7d7;
+    box-shadow: 10px;
+    padding: 30px;
+}
+
+.aboutcontainer {
+    width: 45%;
+}
+
+.aboutcontainer h3 {
+    text-align: center;
+}
+
+.aboutcontent {
+    margin: 50px 0;
+}
+
+
 
 @media screen and (max-width: 900px) {
     
