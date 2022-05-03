@@ -306,6 +306,10 @@ a img {
     text-align: center;
 }
 
+.contact {
+    padding-top: 20px;
+}
+
 input [type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -325,13 +329,25 @@ label {
     padding-left: 20px;
 }
 
+.contact button{
+    justify-items: center;
+}
+
 /* Gallery */
 .galleryshow {
     padding: 0 10%;
 }
 
+.galleryshow img {
+    max-width: 500px;
+}
+
 .showcontent, .showcontent button {
     color: white;
+}
+
+.showcontent {
+    padding-left: 20px;
 }
 
 .galheader h1, .galheader h3{
@@ -340,8 +356,10 @@ label {
     margin-top: 20px;
 }
 
+/* About US */
 .aboutbody {
     background-color: antiquewhite;
+    padding-bottom: 10px;
 }
 
 .aboutbody h1 {
@@ -367,7 +385,9 @@ label {
     margin: 50px 0;
 }
 
-
+.filler {
+    width: 50%;
+}
 
 @media screen and (max-width: 900px) {
     
