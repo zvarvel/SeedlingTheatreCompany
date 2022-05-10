@@ -9,6 +9,7 @@
 body {
     background-color: #222222;
     font-family: sans-serif;
+    width: 100%;
 }
 
 h2 {
@@ -38,6 +39,10 @@ footer h6 {
     height: 300px;
 }
 
+.topheader {
+    padding: 0 20% 20px;
+}
+
 a {
     text-decoration: none;
 }
@@ -61,26 +66,27 @@ a img {
     padding-left: 20px;
 }
 
-.Nav {
-    padding: 30px 200px 20px;
-    overflow: hidden;
-}
-
-.Nav a {
+nav a {
     align-content: center;
     color: white;
     border: 5px solid green;
     padding: 5px 40px;
     background-color: #5f5f5f;
+    width: 150%;
 }
 
-.Nav a:hover {
+nav a:hover {
     text-decoration: none;
     background-color: green; 
 }
 
-.Nav .icon {
-    display: none;
+
+nav li {
+    margin: 0 5em;
+}
+
+.nav {
+    justify-content: center;
 }
 
 .container-fluid {
@@ -136,12 +142,32 @@ a img {
     justify-content: center;
     color: white;
     padding-bottom: 10px;
+    background-color: gray;
 }
 
 .aboutcont {
-    padding: 50px 0;
-    margin: 100px 0;
     font-size: 20px;
+}
+
+.aboutmes {
+    padding: 20px;
+    margin: 50px 0;
+    background-color: #005703;
+    
+}
+
+.reviews {
+    margin-top: 100px;
+    padding: 30px 0;
+    background-color: cadetblue;
+}
+
+#Reviews {
+    height: 140px;
+}
+
+#Reviews .carousel-inner {
+    padding: 0 55px;
 }
 
 .prevphoto img {
@@ -161,6 +187,7 @@ a img {
     text-align: center;
 }
 
+
 .eventcontent h4 {
     padding: 5px 10px;
     background-color: skyblue;
@@ -174,12 +201,13 @@ a img {
     text-align: center;
 }
 
-.eventdisc {
-    justify-content: right;
+.eventdisc img{
+    padding-left: 25%;
 }
 
+
 .misc {
-    padding: 0 20px 20px;
+    padding: 0 20px 50px;
     justify-content: space-between;
 }
 
@@ -207,10 +235,6 @@ a img {
     color: white;
 }
 
-@media {win-width: 992px} 
-    .date {
-        font-size: 3.5m;
-    }
 
 .calendar ol li {
     float: left;
@@ -302,12 +326,18 @@ a img {
 }
 
 /* Contact */
-.contact h2 {
+.contact h3, .contact h4 {
     text-align: center;
 }
 
-.contact {
+.contactinfo {
     padding-top: 20px;
+}
+
+.contact .btn {
+    width: 50%;
+    position: relative;
+    left: 25%;
 }
 
 input [type=text], select, textarea {
@@ -329,17 +359,14 @@ label {
     padding-left: 20px;
 }
 
-.contact button{
-    justify-items: center;
-}
-
 /* Gallery */
 .galleryshow {
     padding: 0 10%;
+    align-items: center;
 }
 
 .galleryshow img {
-    max-width: 500px;
+    max-width: 350px;
 }
 
 .showcontent, .showcontent button {
@@ -356,25 +383,45 @@ label {
     margin-top: 20px;
 }
 
+.galheader select {
+    width: 10%;
+}
+
+.galcontent p {
+    padding: 0 10%;
+}
+.galimg {
+    padding-top: 30px;
+}
+
+.galimg a:hover{
+    opacity: 50%;
+}
+
 /* About US */
 .aboutbody {
-    background-color: antiquewhite;
     padding-bottom: 10px;
 }
 
 .aboutbody h1 {
     text-align: center;
-    padding-top: 20px;
+    padding: 40px 0;
+    color: white;
+}
+
+.aboutbody h2 {
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.50);
 }
 
 .contentbox {
     background-color: #faf7d7;
     box-shadow: 10px;
     padding: 30px;
+    box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.50);
 }
 
 .aboutcontainer {
-    width: 45%;
+    width: 50%;
 }
 
 .aboutcontainer h3 {
@@ -382,38 +429,111 @@ label {
 }
 
 .aboutcontent {
-    margin: 50px 0;
+    padding: 50px 0;
+    align-items: center;
 }
 
 .filler {
-    width: 50%;
+    padding: 0 5%;
 }
 
-@media screen and (max-width: 900px) {
-    
-    .curtain {
-        visibility: hidden;
-    }
-    
+.filler img {
+    width: 100%;
+    box-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.50); 
 }
+
+/* Shop */
+.showinfo {
+    padding: 0 10%;
+}
+
+
 
 @media screen and (max-width: 600px) {
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
     
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+    
+    /* general */
+    
+    .navbar {
+        color: white;
+    }
+    
+    .calender, .log_cart {
+        display: none;
+    }
+    
+    .topheader img {
+        display: none;
+    }
+    
+    .logo {
+        background-image: url(../images/STC-Logo.png);
+        height: auto;
+        width: 50%;
+        background-size: cover;
+    }
+    
+    .jumbotron {
+        flex-flow: column;
+    }
+    
+    /* index */
+    
+    .curtain, .prevphoto, .prevphoto2 {
+        display: none;
+    }
+    
+    .event {
+        flex-flow: column;
+    }
+    
+    .vid {
+        width: 50%;
+    }
+    
+    /* gallery */
+      
+    .galleryshow {
+        flex-flow: column;
+    }
+    
+    .galleryshow img {
+        padding-bottom: 20px;
+    }
+    
+    .galleryshow .modal-body {
+        flex-flow: column;
+    }
+    
+    /* about us */
+    
+    .filler {
+        display: none;
+    }
+    
+    .aboutcontainer {
+        width: 100%;
+    }
+    
+    /* calender */
+    
+    
+    
+    /* contact */
+    
+    .contact {
+        flex-flow: column;
+    }
+    
+    /* shop */
+        
+    .shopcontent select {
+        width: auto;
+    }
+    
+    /* footer */
+    
+    
+    
   }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-}
 
